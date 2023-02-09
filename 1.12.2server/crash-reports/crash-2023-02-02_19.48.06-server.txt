@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2023-02-02 19:48:06 JST
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: com/sun/jna/Platform
+    at com.Axeryok.CocoaInput.CocoaInput.init(CocoaInput.java:77)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    at java.lang.reflect.Method.invoke(Unknown Source)
+    at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+    at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+    at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+    at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+    at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+    at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+    at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+    at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+    at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    at java.lang.reflect.Method.invoke(Unknown Source)
+    at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+    at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+    at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+    at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+    at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+    at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+    at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+    at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+    at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:749)
+    at net.minecraftforge.fml.server.FMLServerHandler.finishServerLoading(FMLServerHandler.java:108)
+    at net.minecraftforge.fml.common.FMLCommonHandler.onServerStarted(FMLCommonHandler.java:338)
+    at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:219)
+    at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+    at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.sun.jna.Platform
+    at java.net.URLClassLoader.findClass(Unknown Source)
+    at java.lang.ClassLoader.loadClass(Unknown Source)
+    at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+    at java.lang.ClassLoader.loadClass(Unknown Source)
+    at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:106)
+    at java.lang.ClassLoader.loadClass(Unknown Source)
+    at java.lang.ClassLoader.loadClass(Unknown Source)
+    ... 32 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Windows 11 (amd64) version 10.0
+  Java Version: 1.8.0_361, Oracle Corporation
+  Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+  Memory: 777084424 bytes (741 MB) / 1083179008 bytes (1033 MB) up to 3760193536 bytes (3586 MB)
+  JVM Flags: 0 total;
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: MCP 9.42 Powered by Forge 14.23.5.2860 21 mods loaded, 21 mods active
+       States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+       
+       | State | ID                                          | Version                  | Source                                              | Signature                                |
+       |:----- |:------------------------------------------- |:------------------------ |:--------------------------------------------------- |:---------------------------------------- |
+       | LCHI  | minecraft                                   | 1.12.2                   | minecraft.jar                                       | None                                     |
+       | LCHI  | mcp                                         | 9.42                     | minecraft.jar                                       | None                                     |
+       | LCHI  | FML                                         | 8.0.99.99                | forge_server.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCHI  | forge                                       | 14.23.5.2860             | forge_server.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCH   | CocoaInput                                  | 3.1.5                    | minecraft.jar                                       | None                                     |
+       | LCH   | openmodscore                                | 0.12.2                   | minecraft.jar                                       | None                                     |
+       | LCH   | net.minecraft.scalar.cutall.mod_cutallsmp   | 2.5.2                    | [1.12][forge2413]mod_CutAllSMP_v2.5.2.jar           | None                                     |
+       | LCH   | net.minecraft.scalar.digall.mod_digallsmp   | 2.3.2                    | [1.12][forge2413]mod_DigAllSMP_v2.3.2.jar           | None                                     |
+       | LCH   | net.minecraft.scalar.mineall.mod_mineallsmp | 2.6.6                    | [1.12][forge2413]mod_MineAllSMP_v2.6.6.jar          | None                                     |
+       | LCH   | net.minecraft.rosettaenchanttable           | 0.0.9                    | [1.12][forge2413]mod_RosettaEnchantTable_v0.0.9.jar | None                                     |
+       | LCH   | storagebox                                  | 3.2.0                    | [1.12][forge2413]mod_StorageBox_v3.2.0.jar          | None                                     |
+       | LCH   | cxlibrary                                   | 1.6.1                    | cxlibrary-1.12.1-1.6.1.jar                          | None                                     |
+       | LCH   | inventorytweaks                             | 1.63+release.109.220f184 | InventoryTweaks-1.63.jar                            | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+       | LCH   | ironbackpacks                               | 1.12.2-3.0.8-12          | IronBackpacks-1.12.2-3.0.8-12.jar                   | None                                     |
+       | LCH   | multipagechest                              | 1.9.1                    | MultiPageChest-1.12-1.9.1.jar                       | None                                     |
+       | LCH   | openmods                                    | 0.12.2                   | OpenModsLib-1.12.2-0.12.2.jar                       | d2a9a8e8440196e26a268d1f3ddc01b2e9c572a5 |
+       | LCH   | openblocks                                  | 1.8.1                    | OpenBlocks-1.12.2-1.8.1.jar                         | d2a9a8e8440196e26a268d1f3ddc01b2e9c572a5 |
+       | LCH   | reversecraft                                | 5.0.0                    | ReverseCraft-1.12.2-1.0.1.jar                       | None                                     |
+       | LCH   | flammpfeil.slashblade                       | mc1.12-r33               | SlashBlade-mc1.12-r33.jar                           | None                                     |
+       | LCH   | twilightforest                              | 3.10.1013                | twilightforest-1.12.2-3.10.1013-universal.jar       | None                                     |
+       | LCH   | vanillafix                                  | 1.0.10-150               | VanillaFix-1.0.10-150.jar                           | None                                     |
+  Loaded coremods (and transformers): CocoaInputCorePlugin (CocoaInput-[1.9-1.12.2]-3.1.5.jar)
+                                        com.Axeryok.CocoaInput.CocoaInputTransformer
+                                      Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+                                        invtweaks.forge.asm.ContainerTransformer
+                                      VanillaFixLoadingPlugin (VanillaFix-1.0.10-150.jar)
+                                        
+                                      OpenModsCorePlugin (OpenModsLib-1.12.2-0.12.2.jar)
+                                        openmods.core.OpenModsClassTransformer
+                                      CXLibraryCore (cxlibrary-1.12.1-1.6.1.jar)
+                                        cubex2.cxlibrary.CoreModTransformer
+  OpenModsLib class transformers: [llama_null_fix:FINISHED],[horse_base_null_fix:FINISHED],[pre_world_render_hook:ENABLED],[player_render_hook:ENABLED],[horse_null_fix:FINISHED]
+  Suspected Mods: Unknown
+  Profiler Position: N/A (disabled)
+  Is Modded: Definitely; Server brand changed to 'fml,forge'
+  Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,100 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 22/12/29 22:27
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from SpawnChecker (spawnchecker)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/resources/I18n
+	at net.awairo.mcmod.common.v1.util.Fingerprint.handle(Fingerprint.java:68)
+	at net.awairo.mcmod.spawnchecker.Proxy.handleModEvent(Proxy.java:121)
+	at net.awairo.mcmod.spawnchecker.SpawnChecker.handleModEvent(SpawnChecker.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:637)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:595)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.resources.I18n
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 38 more
+Caused by: java.lang.NullPointerException
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_351, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 930510296 bytes (887 MB) / 1128267776 bytes (1076 MB) up to 3760193536 bytes (3586 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 24 mods loaded, 24 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                                          | Version        | Source                                              | Signature                                |
+	|:----- |:------------------------------------------- |:-------------- |:--------------------------------------------------- |:---------------------------------------- |
+	| LC    | minecraft                                   | 1.12.2         | minecraft.jar                                       | None                                     |
+	| LC    | mcp                                         | 9.42           | minecraft.jar                                       | None                                     |
+	| LC    | FML                                         | 8.0.99.99      | forge_server.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LC    | forge                                       | 14.23.5.2860   | forge_server.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LC    | net.minecraft.scalar.cutall.mod_cutallsmp   | 2.5.2          | [1.12][forge2413]mod_CutAllSMP_v2.5.2.jar           | None                                     |
+	| LC    | net.minecraft.scalar.mineall.mod_mineallsmp | 2.6.6          | [1.12][forge2413]mod_MineAllSMP_v2.6.6.jar          | None                                     |
+	| LC    | net.minecraft.rosettaenchanttable           | 0.0.9          | [1.12][forge2413]mod_RosettaEnchantTable_v0.0.9.jar | None                                     |
+	| LC    | storagebox                                  | 3.2.0          | [1.12][forge2413]mod_StorageBox_v3.2.0.jar          | None                                     |
+	| LC    | carryon                                     | 1.12.3         | CarryOn+MC1.12.2+v1.12.3.jar                        | 55e88f24d04398481ae6f1ce76f65fd776f14227 |
+	| LC    | cosmeticarmorreworked                       | 1.12.2-v5a     | CosmeticArmorReworked-1.12.2-v5a.jar                | aaaf83332a11df02406e9f266b1b65c1306f0f76 |
+	| LC    | epicsiegemod                                | 13.168         | EpicSiegeMod-13.168.jar                             | None                                     |
+	| LC    | improvedbackpacks                           | 1.12.2-1.2.0.3 | ImprovedBackpacks-1.12.2-1.2.0.3.jar                | None                                     |
+	| LC    | infernalmobs                                | 1.7.6          | InfernalMobs-1.12.2.jar                             | None                                     |
+	| LC    | jei                                         | 4.16.1.301     | jei_1.12.2-4.16.1.301.jar                           | None                                     |
+	| LC    | journeymap                                  | 1.12.2-5.7.1   | journeymap-1.12.2-5.7.1.jar                         | None                                     |
+	| LC    | lostcities                                  | 2.0.22         | lostcities-1.12-2.0.22.jar                          | None                                     |
+	| LC    | mutantbeasts                                | 1.12.2-1.0.2   | MutantBeasts-1.12.2-1.0.2.jar                       | None                                     |
+	| LC    | reforged                                    | 0.7.5          | Reforged-0.7.5-1.12+.jar                            | None                                     |
+	| LC    | reversecraft                                | 1.0.3          | ReverseCraft-1.12.2-1.0.3.jar                       | None                                     |
+	| LE    | spawnchecker                                | 2.7.7.137      | SpawnChecker-2.7.7.137.jar                          | None                                     |
+	| L     | spawnchecker.presetmode                     | 2.7.7.137      | SpawnChecker-2.7.7.137.jar                          | None                                     |
+	| L     | tombstone                                   | 4.1.2          | tombstone-4.1.2-1.12.2.jar                          | None                                     |
+	| L     | vampirism                                   | 1.6.2          | Vampirism-1.12.2-1.6.2.jar                          | None                                     |
+	| L     | teamlapen-lib                               | 1.6.2          | Vampirism-1.12.2-1.6.2.jar                          | None                                     |
+
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
