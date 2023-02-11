@@ -4567,6 +4567,12 @@
     },
     "done": true
   },
+  "buildcraftfactory:recipes/water_gel_spawn": {
+    "criteria": {
+      "has_sand": "2023-02-12 00:34:27 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/iron_door": {
     "criteria": {
       "has_iron_ingot": "2023-02-02 20:07:46 +0900"
