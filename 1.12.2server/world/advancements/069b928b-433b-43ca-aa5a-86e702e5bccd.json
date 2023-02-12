@@ -912,6 +912,12 @@
     },
     "done": true
   },
+  "buildcraftfactory:draining_the_world": {
+    "criteria": {
+      "code_trigger": "2023-02-12 14:15:20 +0900"
+    },
+    "done": true
+  },
   "twilightforest:alt/treasures/ironwood_tool_set": {
     "criteria": {
       "sword": "2023-02-03 00:29:55 +0900",

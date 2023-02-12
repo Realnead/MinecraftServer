@@ -1,0 +1,81 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  OpenModsCorePlugin (OpenModsLib-1.12.2-0.12.2.jar)
+  CXLibraryCore (cxlibrary-1.12.1-1.6.1.jar)
+Contact their authors BEFORE contacting forge
+
+// Sorry :(
+
+Time: 23/02/12 15:18
+Description: Exception in server tick loop
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at net.minecraft.entity.EntityTracker.func_72788_a(EntityTracker.java:290)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:779)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_361, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1477925056 bytes (1409 MB) / 1892679680 bytes (1805 MB) up to 3760193536 bytes (3586 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 14, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 30 mods loaded, 30 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                                          | Version         | Source                                              | Signature                                |
+	|:------ |:------------------------------------------- |:--------------- |:--------------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft                                   | 1.12.2          | minecraft.jar                                       | None                                     |
+	| LCHIJA | mcp                                         | 9.42            | minecraft.jar                                       | None                                     |
+	| LCHIJA | FML                                         | 8.0.99.99       | forge_server.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge                                       | 14.23.5.2860    | forge_server.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | openmodscore                                | 0.12.2          | minecraft.jar                                       | None                                     |
+	| LCHIJA | net.minecraft.scalar.cutall.mod_cutallsmp   | 2.5.2           | [1.12][forge2413]mod_CutAllSMP_v2.5.2.jar           | None                                     |
+	| LCHIJA | net.minecraft.scalar.digall.mod_digallsmp   | 2.3.2           | [1.12][forge2413]mod_DigAllSMP_v2.3.2.jar           | None                                     |
+	| LCHIJA | net.minecraft.scalar.mineall.mod_mineallsmp | 2.6.6           | [1.12][forge2413]mod_MineAllSMP_v2.6.6.jar          | None                                     |
+	| LCHIJA | net.minecraft.rosettaenchanttable           | 0.0.9           | [1.12][forge2413]mod_RosettaEnchantTable_v0.0.9.jar | None                                     |
+	| LCHIJA | storagebox                                  | 3.2.0           | [1.12][forge2413]mod_StorageBox_v3.2.0.jar          | None                                     |
+	| LCHIJA | quarryplus                                  | 12.5.4          | AdditionalEnchantedMiner-1.12.2-12.5.4.jar          | 617a4e95f0af9de5402bb9883abe0f53a6bfa230 |
+	| LCHIJA | quarryplus_ct                               | 12.5.4          | AdditionalEnchantedMiner-1.12.2-12.5.4.jar          | 617a4e95f0af9de5402bb9883abe0f53a6bfa230 |
+	| LCHIJA | buildcraftlib                               | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcraftcore                              | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcraftbuilders                          | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcrafttransport                         | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcraftsilicon                           | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcraftcompat                            | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcraftenergy                            | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcraftfactory                           | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | buildcraftrobotics                          | 7.99.24.6       | buildcraft-all-7.99.24.6.jar                        | None                                     |
+	| LCHIJA | cxlibrary                                   | 1.6.1           | cxlibrary-1.12.1-1.6.1.jar                          | None                                     |
+	| LCHIJA | ironbackpacks                               | 1.12.2-3.0.8-12 | IronBackpacks-1.12.2-3.0.8-12.jar                   | None                                     |
+	| LCHIJA | jei                                         | 4.16.1.302      | jei_1.12.2-4.16.1.302.jar                           | None                                     |
+	| LCHIJA | multipagechest                              | 1.9.1           | MultiPageChest-1.12-1.9.1.jar                       | None                                     |
+	| LCHIJA | openmods                                    | 0.12.2          | OpenModsLib-1.12.2-0.12.2.jar                       | d2a9a8e8440196e26a268d1f3ddc01b2e9c572a5 |
+	| LCHIJA | openblocks                                  | 1.8.1           | OpenBlocks-1.12.2-1.8.1.jar                         | d2a9a8e8440196e26a268d1f3ddc01b2e9c572a5 |
+	| LCHIJA | reversecraft                                | 5.0.0           | ReverseCraft-1.12.2-1.0.1.jar                       | None                                     |
+	| LCHIJA | flammpfeil.slashblade                       | mc1.12-r33      | SlashBlade-mc1.12-r33.jar                           | None                                     |
+	| LCHIJA | twilightforest                              | 3.10.1013       | twilightforest-1.12.2-3.10.1013-universal.jar       | None                                     |
+
+	Loaded coremods (and transformers): 
+OpenModsCorePlugin (OpenModsLib-1.12.2-0.12.2.jar)
+  openmods.core.OpenModsClassTransformer
+CXLibraryCore (cxlibrary-1.12.1-1.6.1.jar)
+  cubex2.cxlibrary.CoreModTransformer
+	OpenModsLib class transformers: [llama_null_fix:FINISHED],[horse_base_null_fix:FINISHED],[pre_world_render_hook:ENABLED],[player_render_hook:ENABLED],[horse_null_fix:FINISHED]
+	Profiler Position: N/A (disabled)
+	Player Count: 3 / 20; [EntityPlayerMP['Realnead9673'/590, l='world', x=-87.85, y=64.00, z=255.42], EntityPlayerMP['NatunoMETEOR'/197597, l='world', x=-81.61, y=38.00, z=482.33], EntityPlayerMP['Ryuoniha120218'/205706, l='world', x=-12.04, y=71.00, z=30.87]]
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
