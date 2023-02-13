@@ -89,6 +89,12 @@
     },
     "done": true
   },
+  "twilightforest:alt/major_landmarks/yeti_lairs": {
+    "criteria": {
+      "discover": "2023-02-13 22:08:22 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_pickaxe": {
     "criteria": {
       "has_iron_ingot": "2023-02-02 21:35:41 +0900"
@@ -453,8 +459,12 @@
   },
   "twilightforest:arborist": {
     "criteria": {
+      "twilight_oak_fence": "2023-02-13 21:46:57 +0900",
       "mine_slab": "2023-02-12 20:43:06 +0900",
       "twilight_oak_planks": "2023-02-06 23:25:41 +0900",
+      "canopy_planks": "2023-02-13 22:07:12 +0900",
+      "canopy_log": "2023-02-13 22:06:40 +0900",
+      "canopy_sapling": "2023-02-13 22:06:41 +0900",
       "twilight_oak_stairs": "2023-02-06 23:25:50 +0900",
       "mine_planks": "2023-02-12 20:43:05 +0900",
       "dark_planks": "2023-02-12 20:47:28 +0900"
@@ -470,6 +480,12 @@
   "minecraft:recipes/decorations/white_banner": {
     "criteria": {
       "has_white_wool": "2023-02-02 21:46:20 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/biomes/dense_twilight_forest": {
+    "criteria": {
+      "discover": "2023-02-13 21:54:04 +0900"
     },
     "done": true
   },
@@ -671,6 +687,12 @@
     },
     "done": true
   },
+  "twilightforest:alt/entities/animals": {
+    "criteria": {
+      "0": "2023-02-13 21:44:24 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/furnace": {
     "criteria": {
       "has_cobblestone": "2023-02-02 21:24:21 +0900"
@@ -869,6 +891,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/jungle_fence": {
+    "criteria": {
+      "has_planks": "2023-02-13 21:49:35 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/lime_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2023-02-02 21:32:30 +0900"
@@ -991,6 +1019,12 @@
     },
     "done": true
   },
+  "twilightforest:alt/entities/bighorn_sheep": {
+    "criteria": {
+      "slay": "2023-02-13 21:44:24 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/birch_door": {
     "criteria": {
       "has_planks": "2023-02-03 00:12:56 +0900"
@@ -1000,6 +1034,12 @@
   "twilightforest:root": {
     "criteria": {
       "make_portal": "2023-02-09 22:11:34 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/treasures/arctic_armor_set": {
+    "criteria": {
+      "ingredient": "2023-02-13 21:58:23 +0900"
     },
     "done": true
   },
@@ -1165,6 +1205,12 @@
     },
     "done": true
   },
+  "twilightforest:alt/entities/yeti": {
+    "criteria": {
+      "slay": "2023-02-13 21:58:14 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/magenta_dye_from_lapis_ink_bonemeal": {
     "criteria": {
       "has_lapis": "2023-02-02 22:35:24 +0900"
@@ -1261,6 +1307,12 @@
     },
     "done": true
   },
+  "twilightforest:alt/biomes/snowy_forest": {
+    "criteria": {
+      "discover": "2023-02-13 21:55:39 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_stained_glass": {
     "criteria": {
       "has_glass": "2023-02-12 15:25:00 +0900"
@@ -1297,6 +1349,12 @@
     },
     "done": true
   },
+  "twilightforest:alt/treasures/ice_bomb": {
+    "criteria": {
+      "ice_bomb": "2023-02-13 22:12:48 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_at_least_9_coal": "2023-02-02 21:33:44 +0900"
@@ -1324,6 +1382,12 @@
   "minecraft:recipes/building_blocks/light_blue_wool": {
     "criteria": {
       "has_white_wool": "2023-02-02 21:46:20 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/treasures/yeti_armor_set": {
+    "criteria": {
+      "ingredient": "2023-02-13 22:12:49 +0900"
     },
     "done": true
   },
@@ -1447,6 +1511,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_wooden_slab": {
+    "criteria": {
+      "has_planks": "2023-02-13 21:49:35 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/bone_meal_from_bone": {
     "criteria": {
       "has_bone": "2023-02-02 21:39:15 +0900"
@@ -1456,6 +1526,12 @@
   "minecraft:recipes/building_blocks/black_concrete_powder": {
     "criteria": {
       "has_gravel": "2023-02-02 23:16:22 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/biomes/firefly_forest": {
+    "criteria": {
+      "discover": "2023-02-13 21:54:50 +0900"
     },
     "done": true
   },
@@ -1516,6 +1592,12 @@
   "minecraft:story/form_obsidian": {
     "criteria": {
       "obsidian": "2023-02-11 01:01:39 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/major_landmarks/hollow_hills": {
+    "criteria": {
+      "1": "2023-02-13 21:50:41 +0900"
     },
     "done": true
   },
@@ -1585,10 +1667,22 @@
     },
     "done": true
   },
+  "twilightforest:alt/entities/wild_boar": {
+    "criteria": {
+      "slay": "2023-02-13 21:45:13 +0900"
+    },
+    "done": true
+  },
   "flammpfeil.slashblade:root": {
     "criteria": {
       "useWoodenSword": "2023-02-02 21:24:37 +0900",
       "attackTheEntity": "2023-02-02 21:19:28 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/major_landmarks/medium_hollow_hill": {
+    "criteria": {
+      "discover": "2023-02-13 21:50:41 +0900"
     },
     "done": true
   },
@@ -1601,6 +1695,12 @@
   "twilightforest:alt/major_landmarks/lich_tower": {
     "criteria": {
       "discover": "2023-02-12 20:20:50 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/entities/deer": {
+    "criteria": {
+      "slay": "2023-02-13 21:45:20 +0900"
     },
     "done": true
   },
@@ -1625,6 +1725,12 @@
   "minecraft:recipes/building_blocks/quartz_block": {
     "criteria": {
       "has_quartz": "2023-02-05 23:59:42 +0900"
+    },
+    "done": true
+  },
+  "twilightforest:alt/treasures/armors": {
+    "criteria": {
+      "6": "2023-02-13 21:58:23 +0900"
     },
     "done": true
   },
@@ -1772,6 +1878,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_stairs": {
+    "criteria": {
+      "has_planks": "2023-02-13 21:49:35 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/light_gray_stained_glass": {
     "criteria": {
       "has_glass": "2023-02-12 15:25:00 +0900"
@@ -1832,6 +1944,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/jungle_door": {
+    "criteria": {
+      "has_planks": "2023-02-13 21:49:35 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/lapis_block": {
     "criteria": {
       "has_at_least_9_lapis": "2023-02-02 22:35:24 +0900"
@@ -1868,6 +1986,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/jungle_fence_gate": {
+    "criteria": {
+      "has_planks": "2023-02-13 21:49:35 +0900"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stonebrick": {
     "criteria": {
       "has_stone": "2023-02-05 23:30:10 +0900"
@@ -1885,6 +2009,12 @@
       "has_gold_ingot": "2023-02-05 22:58:48 +0900"
     },
     "done": true
+  },
+  "twilightforest:progress_yeti": {
+    "criteria": {
+      "fur": "2023-02-13 22:12:49 +0900"
+    },
+    "done": false
   },
   "minecraft:recipes/building_blocks/melon_block": {
     "criteria": {
